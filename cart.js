@@ -12,7 +12,7 @@ let cartContainer = document.getElementById('cartContainer')
 let boxContainerDiv = document.createElement('div')
 boxContainerDiv.id = 'boxContainer'
 
-// DYNAMIC CODE TO SHOW THE SELECTED ITEMS IN YOUR CART
+
 function dynamicCartSection(ob,itemCounter)
 {
     let boxDiv = document.createElement('div')
@@ -34,7 +34,7 @@ function dynamicCartSection(ob,itemCounter)
     boxh4.appendChild(h4Text)
     boxDiv.appendChild(boxh4)
 
-    // console.log(boxContainerDiv);
+   
 
     buttonLink.appendChild(buttonText)
     cartContainer.appendChild(boxContainerDiv)
@@ -58,7 +58,7 @@ let h2Text = document.createTextNode('Total Amount')
 totalh2.appendChild(h2Text)
 totalDiv.appendChild(totalh2)
 
-// TO UPDATE THE TOTAL AMOUNT
+
 function amountUpdate(amount)
 {
     let totalh4 = document.createElement('h4')
@@ -88,8 +88,6 @@ buttonTag.onclick = function()
 {
     console.log("clicked")
 }  
-//dynamicCartSection()
-// console.log(dynamicCartSection());
 
 // BACKEND CALL
 let httpRequest = new XMLHttpRequest()
